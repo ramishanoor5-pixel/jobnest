@@ -1,0 +1,254 @@
+[
+  {
+    "id": "job-1",
+    "title": "Senior Frontend Developer",
+    "company": "TechVanguard Solutions",
+    "location": "Lahore, Pakistan (Hybrid)",
+    "type": "Full-time",
+    "category": "Engineering",
+    "experience": "Senior (4-6 yrs)",
+    "salary": "$2,500 - $3,500 / month",
+    "postedDate": "2 days ago",
+    "featured": true,
+    "logoColor": "#2563eb",
+    "description": "We are seeking a talented Senior Frontend Developer with deep expertise in modern React, TypeScript, and state management architectures. You will lead UI/UX architecture and collaborate directly with product and design teams.",
+    "responsibilities": [
+      "Architect and implement performant, reusable React components and micro-frontends.",
+      "Collaborate closely with UX designers to translate wireframes into interactive user experiences.",
+      "Optimize web applications for maximum speed, scalability, and cross-browser responsiveness.",
+      "Mentor junior front-end engineers and conduct code reviews."
+    ],
+    "requirements": [
+      "4+ years of professional software development experience with React and modern JavaScript/TypeScript.",
+      "Proficiency with CSS3, CSS Modules, or Tailwind CSS and responsive design principles.",
+      "Solid understanding of REST APIs, asynchronous request handling, and state management (Redux/Context API).",
+      "Familiarity with version control (Git) and CI/CD pipelines."
+    ],
+    "benefits": [
+      "Competitive USD-pegged compensation package",
+      "Comprehensive health and life insurance for you and your family",
+      "Flexible hybrid working environment and annual equipment stipend",
+      "Annual performance bonuses and paid time off"
+    ]
+  },
+  {
+    "id": "job-2",
+    "title": "Full Stack Software Engineer",
+    "company": "CloudNest Innovations",
+    "location": "Remote",
+    "type": "Full-time",
+    "category": "Engineering",
+    "experience": "Mid-Level (2-4 yrs)",
+    "salary": "$2,000 - $2,800 / month",
+    "postedDate": "1 day ago",
+    "featured": true,
+    "logoColor": "#059669",
+    "description": "CloudNest is looking for an agile Full Stack Engineer experienced with Node.js, Express, and React to develop scalable cloud-native microservices and rich dashboards.",
+    "responsibilities": [
+      "Design and maintain scalable backend REST APIs using Node.js and PostgreSQL/MongoDB.",
+      "Build dynamic and intuitive frontend user interfaces using React and modern component libraries.",
+      "Deploy and monitor cloud applications on AWS or GCP infrastructure.",
+      "Write unit, integration, and end-to-end tests for critical application paths."
+    ],
+    "requirements": [
+      "2+ years building full stack web applications with Node.js and React.",
+      "Experience with relational and NoSQL databases (PostgreSQL, MySQL, or MongoDB).",
+      "Strong understanding of API security, JWT authentication, and rate limiting.",
+      "Self-motivated and comfortable working in an asynchronous, remote-first team."
+    ],
+    "benefits": [
+      "100% remote flexibility from anywhere",
+      "Home office setup allowance ($1,000)",
+      "Learning & development budget for certifications and courses",
+      "Unlimited paid time off (minimum 20 days mandatory)"
+    ]
+  },
+  {
+    "id": "job-3",
+    "title": "UI/UX Product Designer",
+    "company": "PixelCraft Studios",
+    "location": "Karachi, Pakistan (On-site)",
+    "type": "Full-time",
+    "category": "Design",
+    "experience": "Mid-Level (3+ yrs)",
+    "salary": "PKR 180,000 - 260,000 / month",
+    "postedDate": "3 days ago",
+    "featured": true,
+    "logoColor": "#7c3aed",
+    "description": "PixelCraft is looking for an empathetic Product Designer to craft visually stunning, highly intuitive web and mobile application interfaces for high-growth global clients.",
+    "responsibilities": [
+      "Conduct user research, usability testing, and translate user feedback into design enhancements.",
+      "Develop wireframes, user journeys, prototypes, and high-fidelity mockups in Figma.",
+      "Maintain and evolve our design system with reusable component libraries.",
+      "Partner with engineering teams to ensure pixel-perfect design implementation."
+    ],
+    "requirements": [
+      "Demonstrated portfolio showcasing end-to-end UX/UI projects for web and mobile.",
+      "Expertise in Figma, FigJam, and rapid prototyping tools.",
+      "Understanding of web accessibility standards (WCAG) and responsive design grids.",
+      "Excellent communication and presentation skills."
+    ],
+    "benefits": [
+      "Modern on-site design studio equipped with dual-monitor Mac workstations",
+      "Daily catered lunches and specialty coffee bar",
+      "Bi-annual appraisal cycles and career growth roadmaps",
+      "Gym and wellness allowance"
+    ]
+  },
+  {
+    "id": "job-4",
+    "title": "DevOps & Cloud Engineer",
+    "company": "Apex Infrastructure",
+    "location": "Islamabad, Pakistan (Hybrid)",
+    "type": "Full-time",
+    "category": "DevOps",
+    "experience": "Senior (5+ yrs)",
+    "salary": "$3,000 - $4,200 / month",
+    "postedDate": "Just now",
+    "featured": false,
+    "logoColor": "#ea580c",
+    "description": "Join our platform operations team to maintain multi-region Kubernetes clusters, automated CI/CD deployment pipelines, and zero-trust cloud infrastructure.",
+    "responsibilities": [
+      "Manage and automate Kubernetes clusters deployed on AWS and Google Cloud Platform.",
+      "Build declarative Infrastructure as Code using Terraform and Ansible.",
+      "Maintain Prometheus, Grafana, and Datadog monitoring and alerting systems.",
+      "Conduct security audits, vulnerability scanning, and incident response drill exercises."
+    ],
+    "requirements": [
+      "5+ years in DevOps, SRE, or Systems Administration.",
+      "Deep hands-on experience with Docker, Kubernetes, Helm, and Linux administration.",
+      "Extensive experience with Terraform and CI/CD tools (GitHub Actions, GitLab CI).",
+      "Solid scripting ability in Bash, Python, or Go."
+    ],
+    "benefits": [
+      "Top-tier compensation and equity grant options",
+      "Hybrid flexibility (2 days office, 3 days home)",
+      "Premium OPD/IPD medical coverage for immediate and extended family",
+      "Annual team retreat abroad"
+    ]
+  },
+  {
+    "id": "job-5",
+    "title": "React Native Mobile Developer",
+    "company": "AppFlow Systems",
+    "location": "Remote",
+    "type": "Contract",
+    "category": "Engineering",
+    "experience": "Mid-Level (2-4 yrs)",
+    "salary": "$35 - $50 / hour",
+    "postedDate": "4 days ago",
+    "featured": false,
+    "logoColor": "#0284c7",
+    "description": "We are seeking an independent React Native developer for a 6-month contract to launch our cross-platform iOS and Android consumer mobile application.",
+    "responsibilities": [
+      "Develop smooth, native-feel cross-platform mobile screens using React Native.",
+      "Integrate native device modules (push notifications, camera, biometric auth, geolocation).",
+      "Publish and manage app builds on Google Play Store and Apple App Store.",
+      "Resolve performance bottlenecks and ensure smooth 60fps animations."
+    ],
+    "requirements": [
+      "Proven track record with at least 2 published apps on Google Play or App Store.",
+      "Deep understanding of React Native bridge architecture and native styling.",
+      "Experience with state management libraries (Zustand, Redux Toolkit).",
+      "Strong debugging and profiling skills on Xcode and Android Studio."
+    ],
+    "benefits": [
+      "Hourly contract with guaranteed 35-40 hours per week",
+      "Opportunity for long-term contract extension or full-time conversion",
+      "Flexible working schedule across any time zone"
+    ]
+  },
+  {
+    "id": "job-6",
+    "title": "Digital Growth & Content Marketer",
+    "company": "BrandForge Media",
+    "location": "Lahore, Pakistan (On-site)",
+    "type": "Full-time",
+    "category": "Marketing",
+    "experience": "Junior (1-2 yrs)",
+    "salary": "PKR 100,000 - 150,000 / month",
+    "postedDate": "5 days ago",
+    "featured": false,
+    "logoColor": "#db2777",
+    "description": "BrandForge is looking for an energetic Growth Marketer with passion for SEO, social media strategies, and content storytelling that converts visitors into customers.",
+    "responsibilities": [
+      "Create high-converting blog posts, email newsletters, and organic LinkedIn content.",
+      "Execute on-page and technical SEO strategies to increase organic search presence.",
+      "Run and optimize targeted paid campaigns on Google Ads and Meta platforms.",
+      "Track analytics metrics using Google Analytics 4 and generate monthly ROI reports."
+    ],
+    "requirements": [
+      "1-2 years experience in digital marketing or copy creation for B2B or B2C tech companies.",
+      "Working knowledge of SEO tools (Ahrefs, Semrush, Google Search Console).",
+      "Strong copywriting and visual storytelling skills.",
+      "Enthusiastic team player with an analytical approach to campaign experimentation."
+    ],
+    "benefits": [
+      "Generous performance bonuses pegged to campaign growth milestones",
+      "Mentorship from experienced CMO and industry leaders",
+      "Casual dress code and vibrant office culture in Gulberg, Lahore"
+    ]
+  },
+  {
+    "id": "job-7",
+    "title": "Junior Frontend Web Developer (Internship)",
+    "company": "JobNest Labs",
+    "location": "Remote",
+    "type": "Internship",
+    "category": "Engineering",
+    "experience": "Entry Level (0-1 yr)",
+    "salary": "PKR 45,000 - 60,000 / month stipend",
+    "postedDate": "Today",
+    "featured": true,
+    "logoColor": "#2563eb",
+    "description": "Kickstart your career with JobNest! We are seeking an eager, fast-learning Junior Frontend Intern to work alongside experienced React developers on exciting live features.",
+    "responsibilities": [
+      "Assist in building and testing modular React functional components.",
+      "Connect frontend pages with REST APIs and handle response states.",
+      "Identify and resolve UI bugs and responsiveness issues across mobile and desktop.",
+      "Participate in daily standups, code reviews, and pair programming sessions."
+    ],
+    "requirements": [
+      "Fresh graduate or final year student in Computer Science or Software Engineering.",
+      "Familiarity with HTML5, CSS3, JavaScript (ES6+), and basic React concepts (props, useState, useEffect).",
+      "Basic understanding of Git commands (clone, branch, commit, push).",
+      "Strong problem-solving attitude and genuine curiosity to learn."
+    ],
+    "benefits": [
+      "Dedicated senior mentor assigned for daily guidance",
+      "Clear pathway to full-time Associate Software Engineer role upon internship completion",
+      "Official certificate of completion and recommendation letter"
+    ]
+  },
+  {
+    "id": "job-8",
+    "title": "Data Analyst & Business Intelligence Specialist",
+    "company": "DataMatrix Analytics",
+    "location": "Islamabad, Pakistan (On-site)",
+    "type": "Full-time",
+    "category": "Data & Analytics",
+    "experience": "Mid-Level (2-4 yrs)",
+    "salary": "PKR 170,000 - 240,000 / month",
+    "postedDate": "3 days ago",
+    "featured": false,
+    "logoColor": "#0d9488",
+    "description": "Transform complex business datasets into intuitive dashboards, predictive models, and actionable executive insights for global enterprise clients.",
+    "responsibilities": [
+      "Design and maintain interactive dashboards in Power BI and Tableau.",
+      "Write complex SQL queries, stored procedures, and data extraction scripts.",
+      "Perform statistical exploratory data analysis to identify churn risks and growth levers.",
+      "Collaborate with executive stakeholders to define KPIs and reporting frameworks."
+    ],
+    "requirements": [
+      "Bachelor's degree in Data Science, Statistics, Computer Science, or Economics.",
+      "2+ years practical experience with SQL and Business Intelligence visualization tools.",
+      "Proficiency in Python (Pandas, NumPy, Matplotlib) for data wrangling.",
+      "Clear communication skills with ability to explain data trends to non-technical teams."
+    ],
+    "benefits": [
+      "Competitive salary with annual increment structure",
+      "Sponsored enterprise certifications (Microsoft Data Analyst, AWS Cloud Practitioner)",
+      "State-of-the-art office facilities with recreational gaming zones"
+    ]
+  }
+]

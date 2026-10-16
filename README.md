@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# JobNest - Multi-Page React Job Portal Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Task 5 Deliverable | Frontend Internship**
 
-## Available Scripts
+JobNest is a modern, responsive multi-page web application built with **React 19**, **React Router v7**, and **Google Firebase (Cloud Firestore)**. It serves as a comprehensive career platform connecting talented job seekers with verified employers across engineering, design, marketing, and business intelligence domains.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JobNest allows job seekers to:
+- **Discover Opportunities**: Browse curated job openings with salary ranges, experience levels, and location modes (Remote, On-site, Hybrid).
+- **Interactive Multi-Filter & Search**: Filter jobs in real-time by keyword (title/skill/company), category, employment type, and work mode.
+- **Dynamic Job Details**: View detailed job specifications, responsibilities, requirements, benefits, and company profiles on dynamic routes (`/jobs/:id`).
+- **One-Click Application Modal**: Apply for jobs through an interactive modal form featuring field validation, instant local state feedback, and direct cloud persistence in Firebase Cloud Firestore.
+- **Contact & Inquiry Support**: Submit inquiries via a validated contact form with categorized reason selection, saved to Firebase Firestore.
+- **Interactive FAQ & Company Vision**: Learn about the platform's mission and browse an interactive accordion FAQ on the About page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Key Requirements & Focus Met
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Requirement | Implementation Details |
+| :--- | :--- |
+| **Functional Components** | 100% modern React functional components with clean modular code. |
+| **Props & Basic State** | Controlled inputs, multi-filter state, modal visibility, and accordion states managed via `useState`. |
+| **Routing** | Client-side routing with `react-router-dom` (`<BrowserRouter>`, `<Routes>`, `<Route>`, `<NavLink>`, dynamic `:id` params via `useParams`, programmatic redirection via `useNavigate`). |
+| **Component Reusability** | Reusable `Navbar`, `Footer`, `JobCard`, `JobFilter`, `ApplyModal`, `ContactForm`, `LoadingSpinner`, and `ErrorMessage`. |
+| **Backend & API Handling** | **Google Firebase Cloud Firestore** integration with native `fetch` fallback for 100% reliability both online and offline. |
+| **Loading & Error States** | Dedicated animated `LoadingSpinner`, structured `ErrorMessage` with interactive retry actions, and empty search fallback states. |
+| **Proper Folder Structure** | Clear separation of concerns into `components/`, `pages/`, `services/`, `firebase/`, and static assets. |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React 19** (`react`, `react-dom`)
+- **React Router v7** (`react-router-dom`)
+- **Google Firebase (v12)** (Cloud Firestore for cloud database persistence)
+- **JavaScript (ES6+)** (Async/Await, Promises, Destructuring, Array methods)
+- **Modern CSS3** (Custom Properties / CSS Variables, Flexbox, CSS Grid, Media Queries, Keyframe Animations)
+- **HTML5** (Semantic elements: `header`, `nav`, `main`, `section`, `article`, `footer`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔥 Firebase Cloud Firestore Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+JobNest connects directly to Google Cloud Firestore under Project ID `jobnest-de4e5`:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **`jobs` Collection**: Contains all live job postings, categorized by engineering, design, marketing, and data analytics. Automatically seeded on first load from `/jobs.json`.
+2. **`applications` Collection**: Stores candidate applications submitted through the Apply Modal (candidate name, email, phone number, experience, portfolio, cover note, timestamp).
+3. **`contacts` Collection**: Stores inquiries submitted via the Contact Us form (name, email, inquiry reason, subject, message, timestamp).
+4. **Dual Persistence & Offline Support**: All writes are synchronized with both Firestore and the browser's `localStorage` backup so the application works seamlessly under any network conditions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Project Structure
 
-## Learn More
+```text
+jobnest/
+├── public/
+│   ├── index.html
+│   └── jobs.json               # Seed & offline API dataset for jobs
+├── src/
+│   ├── components/
+│   │   ├── ApplyModal.js       # Reusable job application form modal
+│   │   ├── ContactForm.js      # Reusable validated contact inquiry form
+│   │   ├── ErrorMessage.js     # Reusable error alert with retry button
+│   │   ├── Footer.js           # Reusable global footer
+│   │   ├── JobCard.js          # Reusable job listing card
+│   │   ├── JobFilter.js        # Reusable multi-attribute search and filter bar
+│   │   ├── LoadingSpinner.js   # Reusable animated loading state
+│   │   ├── Navbar.js           # Reusable navigation header with active states
+│   │   └── ScrollToTop.js      # Utility component for smooth page transitions
+│   ├── firebase/
+│   │   └── config.js           # Firebase app & Firestore initialization
+│   ├── pages/
+│   │   ├── About.js            # About page with mission, values & FAQ accordion
+│   │   ├── Contact.js          # Contact page with office info & contact form
+│   │   ├── Home.js             # Hero, search, metrics, categories & featured jobs
+│   │   ├── JobDetail.js        # Dynamic page (/jobs/:id) with full job specs
+│   │   ├── Jobs.js             # Main dynamic jobs catalogue with API & filters
+│   │   └── NotFound.js         # 404 page for unmatched routes
+│   ├── services/
+│   │   └── jobsApi.js          # Asynchronous service for Firestore & REST operations
+│   ├── App.js                  # Master router and page wrapper
+│   ├── index.css               # Design system & responsive styles
+│   └── index.js                # React DOM entry point
+├── package.json
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 How to Run the Project Locally
 
-### Code Splitting
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed (v16.x or newer recommended).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. Clone or Open the Repository
+```bash
+git clone < https://github.com/ramishanoor5-pixel/jobnest >
+cd jobnest
+```
 
-### Analyzing the Bundle Size
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Start the Development Server
+```bash
+npm start
+```
+The application will open automatically in your browser at:
+```text
+http://localhost:3000
+```
 
-### Making a Progressive Web App
+### 4. Build for Production
+To create an optimized production build:
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔗 Repository & Deliverables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **GitHub Repository**: https://github.com/ramishanoor5-pixel/jobnest `
+- **Author**: (Hafiza Ramisha Noor)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+This project was developed for educational and internship evaluation purposes.
